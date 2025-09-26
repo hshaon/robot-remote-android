@@ -30,7 +30,10 @@ android {
         }
     }
 
-    buildFeatures { compose = true }
+    buildFeatures {
+        compose = true
+        buildConfig = true   // 👈 add this
+    }
     composeOptions { kotlinCompilerExtensionVersion = "1.5.14" }
     kotlinOptions { jvmTarget = "17" }
 
